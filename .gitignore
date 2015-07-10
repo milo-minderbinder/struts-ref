@@ -1,0 +1,9 @@
+*.log
+*.sw[po]
+*.jks
+.gradle/
+build/
+.classpath
+.project
+.settings/
+bin/

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+	<!DOCTYPE struts-config PUBLIC 
+			  "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" 
+			  "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+<struts-config>
+	<form-beans>
+		 <form-bean name="pingForm"
+		 			type="co.insecurity.strutsref.form.PingForm" />	
+	</form-beans>
+	<action-mappings>
+		<action path="/ping"
+				type="co.insecurity.strutsref.action.PingAction"
+				name="pingForm">
+			<forward name="success" path="/WEB-INF/ping.jsp" />		
+		</action>
+	</action-mappings>
+</struts-config>
